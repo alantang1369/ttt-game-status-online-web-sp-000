@@ -17,6 +17,6 @@ def won?(board)
   end
   
   end
-  to_a
+  
 end  
     
