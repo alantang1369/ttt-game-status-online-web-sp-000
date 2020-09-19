@@ -15,7 +15,8 @@ def won?(board)
       to_a == win_index
    end
   end
+  
   end
-  to_a
+  
 end  
     
