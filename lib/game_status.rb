@@ -9,8 +9,13 @@ WIN_COMBINATIONS = [
   ]
   
 def won(board)
-  WIN_COMBINATIONS.any? do |win_index|
-    win_index.all? { |index| board[index] == "X"? }
+  to_a = []
+  if WIN_COMBINATIONS.any? do |win_index|
+   if  win_index.all? { |index| board[index] == "X" }
+      to_a == win_index
+   end
   end
+  end
+  to_a
 end  
     
