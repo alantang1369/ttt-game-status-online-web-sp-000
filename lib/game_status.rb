@@ -37,3 +37,8 @@ def over?(board)
     true
   end
 end  
+
+def winner(board)
+  win_token = won?(board)
+  if board[win_token[0]] == "X"
+    
