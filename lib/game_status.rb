@@ -20,5 +20,15 @@ def won?(board)
   
 end  
 
-def darw?
+def full?(board)
+  if board.all? { |i| |i|!= " "}
+    true
+  end
+end
+
+def draw?(board)
+  if full?(board) && !won?(board)
+    true
+  end
+end  
     
