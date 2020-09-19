@@ -14,8 +14,8 @@ def won?(board)
    if  win_index.all? { |index| board[index] == "X" }
       to_a = win_index
    end
-  end
-  
+     end
+  to_a
   end
   
 end  
