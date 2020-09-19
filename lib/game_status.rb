@@ -11,7 +11,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   to_a = []
   if WIN_COMBINATIONS.any? do |win_index|
-   if  win_index.all? { |index| board[index] == "X" }
+   if  win_index.all? { |index| board[index] == "X" } || win_index.all? { |index| board[index] == "O" }
       to_a = win_index
    end
      end
