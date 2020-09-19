@@ -12,11 +12,11 @@ def won?(board)
   to_a = []
   if WIN_COMBINATIONS.any? do |win_index|
    if  win_index.all? { |index| board[index] == "X" }
-      to_a == win_index
+      to_a = win_index
    end
   end
-  to_a
-  end
   
+  end
+  to_a
 end  
     
