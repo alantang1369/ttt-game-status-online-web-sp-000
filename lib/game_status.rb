@@ -39,6 +39,13 @@ def over?(board)
 end  
 
 def winner(board)
-  win_token = won?(board)
-  if board[win_token[0]] == "X"
+  if won?(board)
+     win_token = won?(board)
+     if board[win_token[0]] == "X"
+       "X"
+     else 
+       "O"
+     end
+  end   
+end  
     
